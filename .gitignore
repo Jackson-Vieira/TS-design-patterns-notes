@@ -26,3 +26,8 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Boilerplates
+boilerplate-readme-notes.md
+boilerplate-readme-front.md
+boilerplate-readme-back.md
