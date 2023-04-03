@@ -73,7 +73,7 @@ class Message {
 }
 ```
 
-Create a factory function to create instances of the `Message` entity, a factory nesse caso funciona como um encapsulamento para a criar a instancia da classe com o new.
+Utilizando uma função de fábrica para criar instâncias da entidade `Message`, nesse exemplo a factory funciona como um wrapper (encapsulador) para a criar uma instancia da classe Message.
 
 ```typescript
 const createMessage = (message: MessageObject) => {
@@ -91,3 +91,7 @@ const createMessage = (message: MessageObject) => {
 ```
 
 Este outro exemplo a factory já retorna o objeto diretamente e não é utilizada como um encapsulamento da classe menssagem.
+
+Referências:
+- https://refactoring.guru/design-patterns/factory-method
+- https://www.youtube.com/watch?v=uyOJ2jjBtBs

@@ -2,7 +2,7 @@
 
 Mediator é um padrão de projeto comportamental que permite que você reduza as dependências complexas entre objetos. O padrão Mediator promove o acoplamento fraco ao evitar que os objetos se refiram uns aos outros explicitamente, Em vez disso, os objetos enviam notificações uns aos outros através de um objeto mediador.
 
-## Problem
+## Problema
 
 Imagine que você tem muitos componentes que precisam se comunicar entre si, mas não quer que eles dependam uns dos outros. Nesse caso, a solução mais simples seria introduzir um objeto hub global com o qual todos os componentes se comunicariam. Esse objeto atuaria como um mediador entre os componentes, retransmitindo solicitações e passando respostas de um lado para o outro. Essa abordagem funciona, mas tem algumas desvantagens sérias:
 
@@ -22,7 +22,7 @@ O padrão Mediador sugere que você extraia toda a lógica de comunicação em u
 
 ![Mediator Structure](https://refactoring.guru/images/patterns/diagrams/mediator/structure.png)
 
-## Example
+## Exemplo
 
 ```typescript
 interface Mediator {
@@ -173,7 +173,7 @@ class AuctionParticipantImpl implements AuctionParticipant {
 
 A classe AuctionParticipantImpl implementa a interface `AuctionParticipant` e se registra no mediador do leilão ao ser criada. Ela também possui um método `placeBid` que atualiza o lance do participante e notifica o mediador sobre a mudança.
 
-## Ultima considerações
+## Ultimas considerações
 
 No padrão Mediator, o objeto mediador atua como intermediário entre os objetos do sistema, permitindo que eles se comuniquem sem conhecerem um ao outro explicitamente. Cada objeto se comunica com o mediador, que então decide como encaminhar a mensagem para os objetos relevantes. Dessa forma, a comunicação pode ser bidirecional, pois o objeto mediador pode enviar mensagens de volta aos objetos que solicitaram informações.
 
